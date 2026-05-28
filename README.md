@@ -24,9 +24,27 @@ npm run dev      # 开发服务器 http://localhost:3000
 - **自动发音**：浏览器 Web Speech API（`ja-JP`），无需音频文件
 - **「易混淆」视图**：自动汇集所有带中文母语者陷阱注 / false-friend 标签的词
 
+## 部署到 GitHub Pages
+
+本应用是纯静态站点，可直接托管在 GitHub Pages。仓库已含工作流
+`.github/workflows/deploy.yml`，**只需在仓库设置里启用一次 Pages**：
+
+1. **Settings → Pages → Build and deployment → Source** 选 **GitHub Actions**。
+2. 把分支合并到 `main`（或在 **Actions** 页手动运行 “Deploy to GitHub Pages” 并选择分支）。
+3. 部署完成后访问 `https://<用户名>.github.io/<仓库名>/`
+   （本仓库即 `https://kangning-huang.github.io/Ogden-850-Japanese/`）。
+
+要点：
+- `next.config.mjs` 用 `output: "export"` 生成静态 `out/`；工作流构建时设
+  `GITHUB_PAGES=true`，并以仓库名作 `basePath`（项目站点在子路径下，否则 CSS/JS 会 404）。
+- 本地 `npm run dev` / `npm run build` 不设该变量，仍在根路径 `/`，互不影响。
+- TTS 用浏览器 Web Speech API，纯前端，静态托管完全支持。
+
 ## 仓库结构
 
 ```
+.github/workflows/
+  deploy.yml        # GitHub Pages 自动部署（静态导出 → Pages）
 app/                # Next.js App Router（layout / page / globals.css）
 components/
   StudyApp.tsx      # 卡片学习主组件（标签 / 翻卡 / 简繁 / 随机 / 键盘 / TTS）
