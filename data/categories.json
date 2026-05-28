@@ -1,0 +1,102 @@
+[
+  {
+    "id": "operations",
+    "name_ja": "はたらきの言葉",
+    "name_zh": "操作词 / 功能词",
+    "name_en": "Operations",
+    "target_count": 150,
+    "description_zh": "搭句子的骨架：助词、系动词与助动词、指示词、疑问词、连词、数词与量词、程度与时间副词。掌握这一层就能把其它词组合成完整句子。",
+    "subcategories": [
+      { "id": "particle", "name_zh": "助词" },
+      { "id": "copula-aux", "name_zh": "系动词与助动词" },
+      { "id": "demonstrative", "name_zh": "指示词（こそあど）" },
+      { "id": "interrogative", "name_zh": "疑问词" },
+      { "id": "pronoun", "name_zh": "代词" },
+      { "id": "conjunction", "name_zh": "连词与接续" },
+      { "id": "adverb", "name_zh": "副词（程度 / 频率 / 时间）" },
+      { "id": "number-counter", "name_zh": "数词与量词" },
+      { "id": "affix", "name_zh": "前缀与后缀" }
+    ]
+  },
+  {
+    "id": "verbs",
+    "name_ja": "うごきの言葉",
+    "name_zh": "核心动词",
+    "name_en": "Core Verbs",
+    "target_count": 180,
+    "description_zh": "表达动作与状态。优先收录构句能力强、可与大量名词搭配的高频动词，以及する系复合动词的基础成分。",
+    "subcategories": [
+      { "id": "existence-state", "name_zh": "存在与状态（ある・いる・なる）" },
+      { "id": "motion", "name_zh": "移动（行く・来る・帰る）" },
+      { "id": "perception-cognition", "name_zh": "感知与认知（見る・聞く・思う・分かる）" },
+      { "id": "communication", "name_zh": "言语与交流（言う・話す・聞く・書く）" },
+      { "id": "action-handling", "name_zh": "动作与操作（する・使う・作る・取る）" },
+      { "id": "transfer", "name_zh": "授受与交换（あげる・もらう・くれる・買う・売る）" },
+      { "id": "daily-life", "name_zh": "日常生活（食べる・飲む・寝る・起きる・働く）" },
+      { "id": "change-result", "name_zh": "变化与结果（始まる・終わる・開く・閉まる）" }
+    ]
+  },
+  {
+    "id": "things-general",
+    "name_ja": "ことがらの言葉",
+    "name_zh": "通用 / 抽象名词",
+    "name_en": "General Things",
+    "target_count": 220,
+    "description_zh": "表达大部分抽象意思的名词：事、物、人、时间、地点、关系、社会、语言、数量、形式名词等。是用简单日语解释复杂概念的核心材料。",
+    "subcategories": [
+      { "id": "formal-noun", "name_zh": "形式名词（こと・もの・ところ・はず・つもり）" },
+      { "id": "people-relations", "name_zh": "人与关系" },
+      { "id": "time", "name_zh": "时间与时段" },
+      { "id": "place-direction", "name_zh": "地点与方位" },
+      { "id": "quantity-degree", "name_zh": "数量与程度" },
+      { "id": "mind-language", "name_zh": "思想、语言与信息" },
+      { "id": "society-life", "name_zh": "社会、工作与生活" },
+      { "id": "abstract", "name_zh": "抽象概念（意味・理由・方法・問題）" }
+    ]
+  },
+  {
+    "id": "things-picturable",
+    "name_ja": "目に見えるものの言葉",
+    "name_zh": "可图示名词",
+    "name_en": "Picturable Things",
+    "target_count": 180,
+    "description_zh": "可以画出来的日常实体：身体、家居、食物、衣物、交通、建筑、自然、动植物等。适合配图记忆。",
+    "subcategories": [
+      { "id": "body", "name_zh": "身体" },
+      { "id": "home", "name_zh": "家与家居" },
+      { "id": "food-drink", "name_zh": "食物与饮品" },
+      { "id": "clothing", "name_zh": "衣物" },
+      { "id": "transport-town", "name_zh": "交通与城镇" },
+      { "id": "building-facility", "name_zh": "建筑与设施" },
+      { "id": "nature-weather", "name_zh": "自然与天气" },
+      { "id": "animal-plant", "name_zh": "动物与植物" },
+      { "id": "tools-objects", "name_zh": "工具与物品" }
+    ]
+  },
+  {
+    "id": "qualities",
+    "name_ja": "ようすの言葉",
+    "name_zh": "性质词",
+    "name_en": "Qualities",
+    "target_count": 100,
+    "description_zh": "描述与判断：形容词与形容动词。尽量成对收录反义词（大きい⇔小さい、新しい⇔古い），便于对比记忆。",
+    "subcategories": [
+      { "id": "i-adjective", "name_zh": "形容词（い）" },
+      { "id": "na-adjective", "name_zh": "形容动词（な）" },
+      { "id": "opposites", "name_zh": "反义词对" }
+    ]
+  },
+  {
+    "id": "expressions",
+    "name_ja": "きまった言い方",
+    "name_zh": "固定表达 / 寒暄",
+    "name_en": "Fixed Expressions",
+    "target_count": 20,
+    "description_zh": "高频礼貌与交际用语：寒暄、致谢、致歉、请求、应答。整句记忆，不拆解。",
+    "subcategories": [
+      { "id": "greeting", "name_zh": "寒暄" },
+      { "id": "courtesy", "name_zh": "致谢与致歉" },
+      { "id": "request-response", "name_zh": "请求与应答" }
+    ]
+  }
+]

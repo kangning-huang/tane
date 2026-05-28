@@ -1,0 +1,796 @@
+[
+  {
+    "id": "pt-001",
+    "name": "AはBです",
+    "level": 1,
+    "jlpt_ref": "N5",
+    "meaning_zh": "A 是 B。最基本的判断句，です 表示礼貌的「是」。",
+    "formation_zh": "名词A + は + 名词B + です。は 提示主题，读作 wa。",
+    "examples": [
+      { "jp": "私は学生です。", "kana": "わたしはがくせいです。", "zh": "我是学生。" },
+      { "jp": "これは本です。", "kana": "これはほんです。", "zh": "这是书。" }
+    ],
+    "related_patterns": ["pt-002", "pt-003", "pt-005"],
+    "chinese_learner_note": "は 作助词时读 wa 不读 ha；です 不是动词「是」的逐字对应，否定要变成 じゃありません 而不是加 ない。",
+    "tags": ["copula", "core"],
+    "review": "verified"
+  },
+  {
+    "id": "pt-002",
+    "name": "AはBではありません",
+    "level": 1,
+    "jlpt_ref": "N5",
+    "meaning_zh": "A 不是 B。です 的否定形式。",
+    "formation_zh": "名词B + ではありません（口语 じゃありません）。",
+    "examples": [
+      { "jp": "私は先生ではありません。", "kana": "わたしはせんせいではありません。", "zh": "我不是老师。" },
+      { "jp": "これはお茶じゃありません。", "kana": "これはおちゃじゃありません。", "zh": "这不是茶。" }
+    ],
+    "related_patterns": ["pt-001"],
+    "chinese_learner_note": "では 口语常说 じゃ；不要用 です + ない。",
+    "tags": ["copula", "negation", "core"],
+    "review": "verified"
+  },
+  {
+    "id": "pt-003",
+    "name": "AはBですか",
+    "level": 1,
+    "jlpt_ref": "N5",
+    "meaning_zh": "A 是 B 吗？句末加 か 构成疑问。",
+    "formation_zh": "陈述句 + か。日语疑问句一般不需要倒装，也不用问号。",
+    "examples": [
+      { "jp": "あなたは学生ですか。", "kana": "あなたはがくせいですか。", "zh": "你是学生吗？" },
+      { "jp": "これは何ですか。", "kana": "これはなんですか。", "zh": "这是什么？" }
+    ],
+    "related_patterns": ["pt-001"],
+    "chinese_learner_note": "か 已表疑问，书面常用「。」而非「？」；何 在 です 前读 nan。",
+    "tags": ["question", "core"],
+    "review": "verified"
+  },
+  {
+    "id": "pt-004",
+    "name": "これ / それ / あれはNです",
+    "level": 1,
+    "jlpt_ref": "N5",
+    "meaning_zh": "这/那（近、中、远）是 N。指示代词作主题。",
+    "formation_zh": "これ(近说话人) / それ(近听话人) / あれ(都远) + は + 名词 + です。",
+    "examples": [
+      { "jp": "それは私のかばんです。", "kana": "それはわたしのかばんです。", "zh": "那是我的包。" },
+      { "jp": "あれは駅です。", "kana": "あれはえきです。", "zh": "那（远处）是车站。" }
+    ],
+    "related_patterns": ["pt-001", "pt-005"],
+    "chinese_learner_note": "中文只分「这/那」两级，日语分これ/それ/あれ三级，按与说话人和听话人的距离区分。",
+    "tags": ["demonstrative", "core"],
+    "review": "verified"
+  },
+  {
+    "id": "pt-005",
+    "name": "NのN",
+    "level": 1,
+    "jlpt_ref": "N5",
+    "meaning_zh": "用 の 连接两个名词，表示所属、所在、性质等（…的…）。",
+    "formation_zh": "名词1 + の + 名词2。名词1 修饰名词2。",
+    "examples": [
+      { "jp": "私の名前は田中です。", "kana": "わたしのなまえはたなかです。", "zh": "我的名字是田中。" },
+      { "jp": "日本語の本を読みます。", "kana": "にほんごのほんをよみます。", "zh": "读日语的书。" }
+    ],
+    "related_patterns": ["pt-001"],
+    "chinese_learner_note": "の 用法比中文「的」更广：日本語の本=日语（方面）的书。多个名词可连用：私の友達の車。",
+    "tags": ["particle", "modification", "core"],
+    "review": "verified"
+  },
+  {
+    "id": "pt-006",
+    "name": "AもBです / Nも",
+    "level": 1,
+    "jlpt_ref": "N5",
+    "meaning_zh": "A 也是 B。も 替换 は/が/を，表示「也、同样」。",
+    "formation_zh": "用 も 代替主题/主语/宾语助词。",
+    "examples": [
+      { "jp": "私も学生です。", "kana": "わたしもがくせいです。", "zh": "我也是学生。" },
+      { "jp": "これもください。", "kana": "これもください。", "zh": "这个也请给我。" }
+    ],
+    "related_patterns": ["pt-001"],
+    "chinese_learner_note": "も 会「吃掉」は/が/を：×私はも → ○私も；×パンをも → ○パンも。",
+    "tags": ["particle", "core"],
+    "review": "verified"
+  },
+  {
+    "id": "pt-007",
+    "name": "Nがあります",
+    "level": 1,
+    "jlpt_ref": "N5",
+    "meaning_zh": "有 N（无生命物、植物、抽象事物的存在）。",
+    "formation_zh": "名词 + が + あります。否定 ありません。",
+    "examples": [
+      { "jp": "机の上に本があります。", "kana": "つくえのうえにほんがあります。", "zh": "桌子上有书。" },
+      { "jp": "時間がありません。", "kana": "じかんがありません。", "zh": "没有时间。" }
+    ],
+    "related_patterns": ["pt-008", "pt-009"],
+    "chinese_learner_note": "无生命用 ある，有生命（人/动物）用 いる，中文都说「有」，必须分开记。",
+    "tags": ["existence", "core"],
+    "review": "verified"
+  },
+  {
+    "id": "pt-008",
+    "name": "Nがいます",
+    "level": 1,
+    "jlpt_ref": "N5",
+    "meaning_zh": "有 N（人、动物等有生命者的存在）。",
+    "formation_zh": "名词（人/动物）+ が + います。否定 いません。",
+    "examples": [
+      { "jp": "教室に学生がいます。", "kana": "きょうしつにがくせいがいます。", "zh": "教室里有学生。" },
+      { "jp": "猫がいます。", "kana": "ねこがいます。", "zh": "有猫。" }
+    ],
+    "related_patterns": ["pt-007", "pt-009"],
+    "chinese_learner_note": "和 あります 的区别只在「有无生命」，不在「有无意志」；植物用 ある。",
+    "tags": ["existence", "core"],
+    "review": "verified"
+  },
+  {
+    "id": "pt-009",
+    "name": "〜に〜があります / います",
+    "level": 1,
+    "jlpt_ref": "N5",
+    "meaning_zh": "在某处有某物/某人。に 表示存在的地点。",
+    "formation_zh": "场所 + に + 名词 + が + あります／います。",
+    "examples": [
+      { "jp": "公園に犬がいます。", "kana": "こうえんにいぬがいます。", "zh": "公园里有狗。" },
+      { "jp": "ここに駅があります。", "kana": "ここにえきがあります。", "zh": "这里有车站。" }
+    ],
+    "related_patterns": ["pt-007", "pt-008"],
+    "chinese_learner_note": "存在地点用 に，不用 で；で 用于动作发生的场所（见 pt-012）。",
+    "tags": ["existence", "particle", "core"],
+    "review": "verified"
+  },
+  {
+    "id": "pt-010",
+    "name": "NをVます",
+    "level": 1,
+    "jlpt_ref": "N5",
+    "meaning_zh": "做某动作（及物动词带宾语）。を 标记动作对象。",
+    "formation_zh": "宾语 + を + 动词ます形。",
+    "examples": [
+      { "jp": "ご飯を食べます。", "kana": "ごはんをたべます。", "zh": "吃饭。" },
+      { "jp": "本を読みます。", "kana": "ほんをよみます。", "zh": "看书。" }
+    ],
+    "related_patterns": ["pt-012", "pt-015"],
+    "chinese_learner_note": "を 只读 o；日语基本语序是「宾语在动词前」（SOV），与中文 SVO 相反。",
+    "tags": ["particle", "verb", "core"],
+    "review": "verified"
+  },
+  {
+    "id": "pt-011",
+    "name": "〜へ / に行きます",
+    "level": 1,
+    "jlpt_ref": "N5",
+    "meaning_zh": "去某地。へ/に 表示移动的方向或目的地。",
+    "formation_zh": "场所 + へ／に + 行きます／来ます／帰ります。",
+    "examples": [
+      { "jp": "学校へ行きます。", "kana": "がっこうへいきます。", "zh": "去学校。" },
+      { "jp": "日本に来ました。", "kana": "にほんにきました。", "zh": "来到了日本。" }
+    ],
+    "related_patterns": ["pt-012"],
+    "chinese_learner_note": "へ 作助词读 e；表方向时 へ 与 に 多可互换，に 更强调到达点。",
+    "tags": ["particle", "motion", "core"],
+    "review": "verified"
+  },
+  {
+    "id": "pt-012",
+    "name": "〜で〜をVます",
+    "level": 1,
+    "jlpt_ref": "N5",
+    "meaning_zh": "在某处做某事 / 用某手段做某事。で 表示动作场所或方法。",
+    "formation_zh": "场所/手段 + で + （宾语を）+ 动词。",
+    "examples": [
+      { "jp": "図書館で本を読みます。", "kana": "としょかんでほんをよみます。", "zh": "在图书馆看书。" },
+      { "jp": "電車で行きます。", "kana": "でんしゃでいきます。", "zh": "坐电车去。" }
+    ],
+    "related_patterns": ["pt-009", "pt-010"],
+    "chinese_learner_note": "动作场所用 で，存在场所用 に；二者最易混。",
+    "tags": ["particle", "core"],
+    "review": "verified"
+  },
+  {
+    "id": "pt-013",
+    "name": "AとB / AやB",
+    "level": 1,
+    "jlpt_ref": "N5",
+    "meaning_zh": "并列名词。と 是完全列举（A 和 B），や 是部分列举（A、B 等）。",
+    "formation_zh": "名词 + と／や + 名词。",
+    "examples": [
+      { "jp": "パンと牛乳を買います。", "kana": "パンとぎゅうにゅうをかいます。", "zh": "买面包和牛奶。" },
+      { "jp": "机の上に本やペンがあります。", "kana": "つくえのうえにほんやペンがあります。", "zh": "桌上有书、笔等。" }
+    ],
+    "related_patterns": ["pt-005"],
+    "chinese_learner_note": "と 表示「就这些」，や 暗示「还有别的」；と 也表示「和某人一起」。",
+    "tags": ["particle", "core"],
+    "review": "verified"
+  },
+  {
+    "id": "pt-014",
+    "name": "〜から〜まで",
+    "level": 1,
+    "jlpt_ref": "N5",
+    "meaning_zh": "从…到…，表示时间或空间的起止。",
+    "formation_zh": "起点 + から + 终点 + まで。可单独使用。",
+    "examples": [
+      { "jp": "九時から五時まで働きます。", "kana": "くじからごじまではたらきます。", "zh": "从九点工作到五点。" },
+      { "jp": "東京から大阪まで。", "kana": "とうきょうからおおさかまで。", "zh": "从东京到大阪。" }
+    ],
+    "related_patterns": ["pt-036"],
+    "chinese_learner_note": "から 也表示原因「因为」（见 pt-036），需看语境区分。",
+    "tags": ["particle", "core"],
+    "review": "verified"
+  },
+  {
+    "id": "pt-015",
+    "name": "Vます / ません / ました / ませんでした",
+    "level": 1,
+    "jlpt_ref": "N5",
+    "meaning_zh": "动词礼貌体的四种基本变化：现在肯定/否定、过去肯定/否定。",
+    "formation_zh": "ます(现在肯定) / ません(现在否定) / ました(过去肯定) / ませんでした(过去否定)。",
+    "examples": [
+      { "jp": "毎日勉強します。", "kana": "まいにちべんきょうします。", "zh": "每天学习。" },
+      { "jp": "昨日は行きませんでした。", "kana": "きのうはいきませんでした。", "zh": "昨天没去。" }
+    ],
+    "related_patterns": ["pt-010"],
+    "chinese_learner_note": "日语动词有时态变化，中文靠「了/没」表达；现在式也表将来。",
+    "tags": ["verb", "conjugation", "core"],
+    "review": "verified"
+  },
+  {
+    "id": "pt-016",
+    "name": "Vたいです",
+    "level": 2,
+    "jlpt_ref": "N5",
+    "meaning_zh": "想做某事（说话人的愿望）。",
+    "formation_zh": "动词ます形去ます + たいです。たい 像形容词一样变化（たくない/たかった）。",
+    "examples": [
+      { "jp": "水が飲みたいです。", "kana": "みずがのみたいです。", "zh": "想喝水。" },
+      { "jp": "日本へ行きたいです。", "kana": "にほんへいきたいです。", "zh": "想去日本。" }
+    ],
+    "related_patterns": ["pt-026"],
+    "chinese_learner_note": "たい 只用于第一人称愿望（或疑问对方）；说第三人称想做要用 たがる。宾语助词常由 を 变 が。",
+    "tags": ["verb", "desire"],
+    "review": "verified"
+  },
+  {
+    "id": "pt-017",
+    "name": "Vてください",
+    "level": 2,
+    "jlpt_ref": "N5",
+    "meaning_zh": "请做某事（礼貌请求或指示）。",
+    "formation_zh": "动词て形 + ください。",
+    "examples": [
+      { "jp": "ここに名前を書いてください。", "kana": "ここになまえをかいてください。", "zh": "请在这里写名字。" },
+      { "jp": "もう一度言ってください。", "kana": "もういちどいってください。", "zh": "请再说一遍。" }
+    ],
+    "related_patterns": ["pt-018", "pt-028"],
+    "chinese_learner_note": "て形是日语动词最重要的连接形，务必掌握其变化规则。",
+    "tags": ["verb", "request", "te-form"],
+    "review": "verified"
+  },
+  {
+    "id": "pt-018",
+    "name": "Vています",
+    "level": 2,
+    "jlpt_ref": "N5",
+    "meaning_zh": "正在做（进行）/ 处于某状态 / 习惯性动作。",
+    "formation_zh": "动词て形 + います。",
+    "examples": [
+      { "jp": "今、本を読んでいます。", "kana": "いま、ほんをよんでいます。", "zh": "现在正在看书。" },
+      { "jp": "東京に住んでいます。", "kana": "とうきょうにすんでいます。", "zh": "住在东京。" }
+    ],
+    "related_patterns": ["pt-017"],
+    "chinese_learner_note": "ています 不只表「正在」：知っています=知道（状态）、結婚しています=已婚（状态），不能理解为「正在知道」。",
+    "tags": ["verb", "aspect", "te-form"],
+    "review": "verified"
+  },
+  {
+    "id": "pt-019",
+    "name": "Vてもいいです",
+    "level": 2,
+    "jlpt_ref": "N5",
+    "meaning_zh": "可以做…（许可）。",
+    "formation_zh": "动词て形 + もいいです。疑问形请求许可。",
+    "examples": [
+      { "jp": "ここに座ってもいいですか。", "kana": "ここにすわってもいいですか。", "zh": "可以坐这里吗？" },
+      { "jp": "写真を撮ってもいいです。", "kana": "しゃしんをとってもいいです。", "zh": "可以拍照。" }
+    ],
+    "related_patterns": ["pt-017", "pt-020"],
+    "chinese_learner_note": null,
+    "tags": ["verb", "permission", "te-form"],
+    "review": "verified"
+  },
+  {
+    "id": "pt-020",
+    "name": "Vてはいけません",
+    "level": 2,
+    "jlpt_ref": "N5",
+    "meaning_zh": "不可以做…（禁止）。",
+    "formation_zh": "动词て形 + はいけません。口语 ちゃいけない／だめ。",
+    "examples": [
+      { "jp": "ここで写真を撮ってはいけません。", "kana": "ここでしゃしんをとってはいけません。", "zh": "这里不可以拍照。" },
+      { "jp": "入ってはいけません。", "kana": "はいってはいけません。", "zh": "不许进入。" }
+    ],
+    "related_patterns": ["pt-019", "pt-028"],
+    "chinese_learner_note": null,
+    "tags": ["verb", "prohibition", "te-form"],
+    "review": "verified"
+  },
+  {
+    "id": "pt-021",
+    "name": "い-adjです / い-adj + N",
+    "level": 1,
+    "jlpt_ref": "N5",
+    "meaning_zh": "用形容词描述性质。い 形容词作谓语或修饰名词。",
+    "formation_zh": "谓语：い形容词 + です（否定 〜くないです）。修饰：い形容词 + 名词。",
+    "examples": [
+      { "jp": "この本は面白いです。", "kana": "このほんはおもしろいです。", "zh": "这本书有意思。" },
+      { "jp": "高い山が見えます。", "kana": "たかいやまがみえます。", "zh": "能看见高高的山。" }
+    ],
+    "related_patterns": ["pt-022"],
+    "chinese_learner_note": "い形容词否定改词尾：高い→高くない；过去 高かった。不要加 です 后再变 ない（×高いではない）。",
+    "tags": ["adjective", "core"],
+    "review": "verified"
+  },
+  {
+    "id": "pt-022",
+    "name": "な-adjです / な-adj + な + N",
+    "level": 1,
+    "jlpt_ref": "N5",
+    "meaning_zh": "用形容动词描述性质。修饰名词时要加 な。",
+    "formation_zh": "谓语：な形容词 + です。修饰：な形容词 + な + 名词。",
+    "examples": [
+      { "jp": "この町は静かです。", "kana": "このまちはしずかです。", "zh": "这个城镇很安静。" },
+      { "jp": "便利な店です。", "kana": "べんりなみせです。", "zh": "是方便的店。" }
+    ],
+    "related_patterns": ["pt-021"],
+    "chinese_learner_note": "な形容词像名词一样变化：否定 静かではない、过去 静かだった；修饰名词必须加 な（×便利店 → ○便利な店）。",
+    "tags": ["adjective", "core"],
+    "review": "verified"
+  },
+  {
+    "id": "pt-023",
+    "name": "AはBより〜です",
+    "level": 2,
+    "jlpt_ref": "N5",
+    "meaning_zh": "A 比 B 更…（比较）。",
+    "formation_zh": "A + は + B + より + 形容词 + です。",
+    "examples": [
+      { "jp": "今日は昨日より暑いです。", "kana": "きょうはきのうよりあついです。", "zh": "今天比昨天热。" },
+      { "jp": "電車はバスより速いです。", "kana": "でんしゃはバスよりはやいです。", "zh": "电车比公交快。" }
+    ],
+    "related_patterns": ["pt-024"],
+    "chinese_learner_note": "より 接在比较基准后；日语没有像中文「更」一样必须的副词。",
+    "tags": ["comparison"],
+    "review": "verified"
+  },
+  {
+    "id": "pt-024",
+    "name": "AとBとどちらが〜ですか",
+    "level": 2,
+    "jlpt_ref": "N5",
+    "meaning_zh": "A 和 B 哪个更…？（二者比较提问）",
+    "formation_zh": "A と B と + どちらが + 形容词 + ですか。回答用「Bのほうが〜です」。",
+    "examples": [
+      { "jp": "コーヒーとお茶とどちらが好きですか。", "kana": "コーヒーとおちゃとどちらがすきですか。", "zh": "咖啡和茶你更喜欢哪个？" },
+      { "jp": "夏のほうが好きです。", "kana": "なつのほうがすきです。", "zh": "（我）更喜欢夏天。" }
+    ],
+    "related_patterns": ["pt-023", "pt-025"],
+    "chinese_learner_note": "二选一用 どちら，不用 どれ（どれ 用于三者以上）。",
+    "tags": ["comparison", "question"],
+    "review": "verified"
+  },
+  {
+    "id": "pt-025",
+    "name": "〜が好きです / 上手です",
+    "level": 2,
+    "jlpt_ref": "N5",
+    "meaning_zh": "喜欢…/擅长…。对象用 が 标记。",
+    "formation_zh": "对象 + が + 好き／嫌い／上手／下手 + です。",
+    "examples": [
+      { "jp": "私は音楽が好きです。", "kana": "わたしはおんがくがすきです。", "zh": "我喜欢音乐。" },
+      { "jp": "彼は料理が上手です。", "kana": "かれはりょうりがじょうずです。", "zh": "他擅长做菜。" }
+    ],
+    "related_patterns": ["pt-026"],
+    "chinese_learner_note": "「喜欢/擅长」的对象用 が 不用 を（×音楽を好き）；好き 是な形容词不是动词。",
+    "tags": ["adjective", "preference"],
+    "review": "verified"
+  },
+  {
+    "id": "pt-026",
+    "name": "〜がほしいです",
+    "level": 2,
+    "jlpt_ref": "N5",
+    "meaning_zh": "想要（某物）。",
+    "formation_zh": "名词 + が + ほしいです。",
+    "examples": [
+      { "jp": "新しい車がほしいです。", "kana": "あたらしいくるまがほしいです。", "zh": "想要新车。" },
+      { "jp": "何がほしいですか。", "kana": "なにがほしいですか。", "zh": "你想要什么？" }
+    ],
+    "related_patterns": ["pt-016", "pt-025"],
+    "chinese_learner_note": "想要「物」用 ほしい，想「做」用 Vたい；对象用 が。第三人称想要用 ほしがる。",
+    "tags": ["desire"],
+    "review": "verified"
+  },
+  {
+    "id": "pt-027",
+    "name": "Vませんか / Vましょう",
+    "level": 2,
+    "jlpt_ref": "N5",
+    "meaning_zh": "Vませんか=要不要一起…（邀请）；Vましょう=（我们）…吧。",
+    "formation_zh": "动词ます形去ます + ませんか／ましょう。",
+    "examples": [
+      { "jp": "一緒に行きませんか。", "kana": "いっしょにいきませんか。", "zh": "要不要一起去？" },
+      { "jp": "始めましょう。", "kana": "はじめましょう。", "zh": "开始吧。" }
+    ],
+    "related_patterns": ["pt-015"],
+    "chinese_learner_note": "ませんか 是否定形但表示邀请，语气更客气；ましょう 表提议。",
+    "tags": ["verb", "invitation"],
+    "review": "verified"
+  },
+  {
+    "id": "pt-028",
+    "name": "Vないでください",
+    "level": 2,
+    "jlpt_ref": "N5",
+    "meaning_zh": "请不要做…（否定请求）。",
+    "formation_zh": "动词ない形 + でください。",
+    "examples": [
+      { "jp": "ここでたばこを吸わないでください。", "kana": "ここでたばこをすわないでください。", "zh": "请不要在这里吸烟。" },
+      { "jp": "心配しないでください。", "kana": "しんぱいしないでください。", "zh": "请不要担心。" }
+    ],
+    "related_patterns": ["pt-017", "pt-020"],
+    "chinese_learner_note": null,
+    "tags": ["verb", "request", "negation"],
+    "review": "verified"
+  },
+  {
+    "id": "pt-029",
+    "name": "Vなければなりません",
+    "level": 2,
+    "jlpt_ref": "N4",
+    "meaning_zh": "必须做…（义务、必要）。",
+    "formation_zh": "动词ない形去 い + ければなりません。口语 なきゃ／ないと。",
+    "examples": [
+      { "jp": "薬を飲まなければなりません。", "kana": "くすりをのまなければなりません。", "zh": "必须吃药。" },
+      { "jp": "もう行かなければなりません。", "kana": "もういかなければなりません。", "zh": "我得走了。" }
+    ],
+    "related_patterns": ["pt-030"],
+    "chinese_learner_note": "双重否定表「必须」，字面是「不…不行」；口语缩成 なきゃ。",
+    "tags": ["verb", "obligation"],
+    "review": "verified"
+  },
+  {
+    "id": "pt-030",
+    "name": "Vなくてもいいです",
+    "level": 2,
+    "jlpt_ref": "N4",
+    "meaning_zh": "不做…也可以（不必）。",
+    "formation_zh": "动词ない形去 い + くてもいいです。",
+    "examples": [
+      { "jp": "明日は来なくてもいいです。", "kana": "あしたはこなくてもいいです。", "zh": "明天不来也可以。" },
+      { "jp": "全部食べなくてもいいです。", "kana": "ぜんぶたべなくてもいいです。", "zh": "不必全部吃完。" }
+    ],
+    "related_patterns": ["pt-019", "pt-029"],
+    "chinese_learner_note": null,
+    "tags": ["verb", "permission", "negation"],
+    "review": "verified"
+  },
+  {
+    "id": "pt-031",
+    "name": "Vたことがあります",
+    "level": 3,
+    "jlpt_ref": "N4",
+    "meaning_zh": "曾经做过…（经验）。",
+    "formation_zh": "动词た形 + ことがあります。",
+    "examples": [
+      { "jp": "日本へ行ったことがあります。", "kana": "にほんへいったことがあります。", "zh": "去过日本。" },
+      { "jp": "すしを食べたことがありません。", "kana": "すしをたべたことがありません。", "zh": "没吃过寿司。" }
+    ],
+    "related_patterns": ["pt-018"],
+    "chinese_learner_note": "表「经验」，相当于中文「…过」；与单纯过去式 Vました（做了）不同。",
+    "tags": ["verb", "experience"],
+    "review": "verified"
+  },
+  {
+    "id": "pt-032",
+    "name": "Vたり〜たりします",
+    "level": 3,
+    "jlpt_ref": "N4",
+    "meaning_zh": "做…做…等（列举若干动作，非全部）。",
+    "formation_zh": "动词た形 + り + 动词た形 + り + します。",
+    "examples": [
+      { "jp": "休みの日は本を読んだり、音楽を聞いたりします。", "kana": "やすみのひはほんをよんだり、おんがくをきいたりします。", "zh": "休息日看看书、听听音乐。" }
+    ],
+    "related_patterns": ["pt-031"],
+    "chinese_learner_note": "暗示「还做别的」，类似名词的 や；最后用 します 收尾。",
+    "tags": ["verb", "listing"],
+    "review": "verified"
+  },
+  {
+    "id": "pt-033",
+    "name": "Vたほうがいいです",
+    "level": 3,
+    "jlpt_ref": "N4",
+    "meaning_zh": "最好做…（建议）。",
+    "formation_zh": "动词た形 + ほうがいいです；否定用 Vないほうがいいです。",
+    "examples": [
+      { "jp": "早く寝たほうがいいです。", "kana": "はやくねたほうがいいです。", "zh": "最好早点睡。" },
+      { "jp": "無理しないほうがいいです。", "kana": "むりしないほうがいいです。", "zh": "最好别勉强。" }
+    ],
+    "related_patterns": ["pt-029"],
+    "chinese_learner_note": "建议用过去形 たほうがいい 更自然，是固定用法。",
+    "tags": ["verb", "advice"],
+    "review": "verified"
+  },
+  {
+    "id": "pt-034",
+    "name": "Vる前に / Vたあとで",
+    "level": 3,
+    "jlpt_ref": "N4",
+    "meaning_zh": "做…之前 / 做…之后（动作先后）。",
+    "formation_zh": "动词原形 + 前に；动词た形 + あとで。名词用 Nの前に／Nのあとで。",
+    "examples": [
+      { "jp": "寝る前に歯を磨きます。", "kana": "ねるまえにはをみがきます。", "zh": "睡觉前刷牙。" },
+      { "jp": "ご飯を食べたあとで散歩します。", "kana": "ごはんをたべたあとでさんぽします。", "zh": "吃完饭后散步。" }
+    ],
+    "related_patterns": ["pt-035"],
+    "chinese_learner_note": "「之前」恒用原形（不管整句是过去），「之后」恒用た形；这点与中文时态直觉不同。",
+    "tags": ["time", "sequence"],
+    "review": "verified"
+  },
+  {
+    "id": "pt-035",
+    "name": "Vながら〜",
+    "level": 3,
+    "jlpt_ref": "N4",
+    "meaning_zh": "一边…一边…（同一主语同时做两动作）。",
+    "formation_zh": "动词ます形去ます + ながら + 主要动作。",
+    "examples": [
+      { "jp": "音楽を聞きながら勉強します。", "kana": "おんがくをききながらべんきょうします。", "zh": "一边听音乐一边学习。" }
+    ],
+    "related_patterns": ["pt-018"],
+    "chinese_learner_note": "后项是主要动作；两个动作须同一人。",
+    "tags": ["verb", "simultaneous"],
+    "review": "verified"
+  },
+  {
+    "id": "pt-036",
+    "name": "〜から / 〜ので",
+    "level": 2,
+    "jlpt_ref": "N5",
+    "meaning_zh": "因为…（表原因理由）。から 较主观，ので 较客气委婉。",
+    "formation_zh": "句子（普通形/礼貌形）+ から；句子（普通形）+ ので。な形容词/名词 + な + ので。",
+    "examples": [
+      { "jp": "高いから買いません。", "kana": "たかいからかいません。", "zh": "因为贵所以不买。" },
+      { "jp": "雨なので、行きません。", "kana": "あめなので、いきません。", "zh": "因为下雨，所以不去。" }
+    ],
+    "related_patterns": ["pt-037"],
+    "chinese_learner_note": "原因从句在前、结果在后，与中文「因为…所以…」语序一致；ので 后接名词/な形容词要加 な。",
+    "tags": ["reason", "conjunction"],
+    "review": "verified"
+  },
+  {
+    "id": "pt-037",
+    "name": "〜が / 〜けれど（けど）",
+    "level": 2,
+    "jlpt_ref": "N4",
+    "meaning_zh": "但是…（转折）。けど 比 が 口语。",
+    "formation_zh": "句子 + が／けれど／けど + 句子。",
+    "examples": [
+      { "jp": "高いですが、買います。", "kana": "たかいですが、かいます。", "zh": "虽然贵，但还是买。" },
+      { "jp": "勉強したけど、分かりませんでした。", "kana": "べんきょうしたけど、わかりませんでした。", "zh": "学了，但没懂。" }
+    ],
+    "related_patterns": ["pt-036"],
+    "chinese_learner_note": "が 在此是转折连词（≠主语助词 が）；けど＞けれど＞けれども 礼貌度递增。",
+    "tags": ["contrast", "conjunction"],
+    "review": "verified"
+  },
+  {
+    "id": "pt-038",
+    "name": "〜と思います",
+    "level": 3,
+    "jlpt_ref": "N4",
+    "meaning_zh": "（我）认为…/觉得…。表达看法。",
+    "formation_zh": "句子普通形 + と思います。",
+    "examples": [
+      { "jp": "明日は雨だと思います。", "kana": "あしたはあめだとおもいます。", "zh": "我觉得明天会下雨。" },
+      { "jp": "彼は来ないと思います。", "kana": "かれはこないとおもいます。", "zh": "我想他不会来。" }
+    ],
+    "related_patterns": ["pt-039"],
+    "chinese_learner_note": "と 前必须用普通形（だ/だった），不用です；名词/な形容词后加 だ。",
+    "tags": ["opinion", "quotation"],
+    "review": "verified"
+  },
+  {
+    "id": "pt-039",
+    "name": "〜と言いました",
+    "level": 3,
+    "jlpt_ref": "N4",
+    "meaning_zh": "（某人）说…。引用他人的话。",
+    "formation_zh": "引用内容 + と + 言いました／言っていました。直接引用用「」。",
+    "examples": [
+      { "jp": "彼は「行きます」と言いました。", "kana": "かれは「いきます」といいました。", "zh": "他说「我去」。" },
+      { "jp": "田中さんは来ないと言いました。", "kana": "たなかさんはこないといいました。", "zh": "田中说不来。" }
+    ],
+    "related_patterns": ["pt-038"],
+    "chinese_learner_note": "と 是引用助词；间接引用用普通形。",
+    "tags": ["quotation"],
+    "review": "verified"
+  },
+  {
+    "id": "pt-040",
+    "name": "Vることができます / 可能形",
+    "level": 3,
+    "jlpt_ref": "N4",
+    "meaning_zh": "能够做…（能力或可能）。",
+    "formation_zh": "动词原形 + ことができます；或用可能形（書く→書ける、食べる→食べられる、する→できる、来る→来られる）。",
+    "examples": [
+      { "jp": "日本語を話すことができます。", "kana": "にほんごをはなすことができます。", "zh": "会说日语。" },
+      { "jp": "刺身が食べられますか。", "kana": "さしみがたべられますか。", "zh": "你能吃生鱼片吗？" }
+    ],
+    "related_patterns": ["pt-044"],
+    "chinese_learner_note": "可能形的对象常用 が（×日本語を話せる的を多变が）；五段动词变 e 段+る，一段动词去る+られる。",
+    "tags": ["verb", "potential"],
+    "review": "verified"
+  },
+  {
+    "id": "pt-041",
+    "name": "〜たら（条件）",
+    "level": 3,
+    "jlpt_ref": "N4",
+    "meaning_zh": "如果…就…/…的话（最通用的条件表达）。",
+    "formation_zh": "动词/形容词/名词的た形 + ら。",
+    "examples": [
+      { "jp": "雨が降ったら、行きません。", "kana": "あめがふったら、いきません。", "zh": "如果下雨就不去。" },
+      { "jp": "安かったら、買います。", "kana": "やすかったら、かいます。", "zh": "便宜的话就买。" }
+    ],
+    "related_patterns": ["pt-042", "pt-043"],
+    "chinese_learner_note": "たら 最万能，可表假定、也可表「做完A后B」；初学者优先掌握。",
+    "tags": ["conditional"],
+    "review": "verified"
+  },
+  {
+    "id": "pt-042",
+    "name": "〜ば（条件）",
+    "level": 3,
+    "jlpt_ref": "N4",
+    "meaning_zh": "如果…（侧重一般条件、假设）。",
+    "formation_zh": "动词把词尾 u→eば；い形容词 い→ければ；名词/な形 + なら(ば)。",
+    "examples": [
+      { "jp": "時間があれば、行きます。", "kana": "じかんがあれば、いきます。", "zh": "有时间的话就去。" },
+      { "jp": "安ければ買います。", "kana": "やすければかいます。", "zh": "便宜就买。" }
+    ],
+    "related_patterns": ["pt-041", "pt-043"],
+    "chinese_learner_note": "ば 多用于一般/假设条件，后项一般不用命令/请求（这点 たら 更自由）。",
+    "tags": ["conditional"],
+    "review": "verified"
+  },
+  {
+    "id": "pt-043",
+    "name": "〜と（必然结果）",
+    "level": 3,
+    "jlpt_ref": "N4",
+    "meaning_zh": "一…就…（自然、必然的结果）。",
+    "formation_zh": "动词/形容词原形 + と + 必然结果。",
+    "examples": [
+      { "jp": "春になると、暖かくなります。", "kana": "はるになると、あたたかくなります。", "zh": "一到春天就变暖。" },
+      { "jp": "右に曲がると、駅があります。", "kana": "みぎにまがると、えきがあります。", "zh": "往右拐就有车站。" }
+    ],
+    "related_patterns": ["pt-041", "pt-042"],
+    "chinese_learner_note": "と 表必然/恒常结果，后项不能用意志、请求、命令。",
+    "tags": ["conditional"],
+    "review": "verified"
+  },
+  {
+    "id": "pt-044",
+    "name": "受身（られる・被动）",
+    "level": 3,
+    "jlpt_ref": "N4",
+    "meaning_zh": "被…（被动语态）。",
+    "formation_zh": "五段 a段+れる（言う→言われる）；一段 +られる（見る→見られる）；する→される、来る→来られる。动作者用 に。",
+    "examples": [
+      { "jp": "先生にほめられました。", "kana": "せんせいにほめられました。", "zh": "被老师表扬了。" },
+      { "jp": "雨に降られました。", "kana": "あめにふられました。", "zh": "被雨淋了（受困扰）。" }
+    ],
+    "related_patterns": ["pt-040", "pt-045"],
+    "chinese_learner_note": "日语有「受害被动」，连不及物动词都能被动（雨に降られる），表达受困扰，中文常无对应。",
+    "tags": ["verb", "passive"],
+    "review": "verified"
+  },
+  {
+    "id": "pt-045",
+    "name": "使役（させる・让/使）",
+    "level": 3,
+    "jlpt_ref": "N4",
+    "meaning_zh": "让/叫某人做…（使役）。",
+    "formation_zh": "五段 a段+せる（行く→行かせる）；一段 +させる（食べる→食べさせる）；する→させる、来る→来させる。",
+    "examples": [
+      { "jp": "子供に野菜を食べさせます。", "kana": "こどもにやさいをたべさせます。", "zh": "让孩子吃蔬菜。" }
+    ],
+    "related_patterns": ["pt-044"],
+    "chinese_learner_note": "被使役者用 に 或 を；与被动形相近，注意区分。",
+    "tags": ["verb", "causative"],
+    "review": "verified"
+  },
+  {
+    "id": "pt-046",
+    "name": "〜つもりです",
+    "level": 3,
+    "jlpt_ref": "N4",
+    "meaning_zh": "打算做…（计划、意图）。",
+    "formation_zh": "动词原形 + つもりです；否定 Vないつもりです。",
+    "examples": [
+      { "jp": "来年、日本へ行くつもりです。", "kana": "らいねん、にほんへいくつもりです。", "zh": "打算明年去日本。" }
+    ],
+    "related_patterns": ["pt-047"],
+    "chinese_learner_note": "表较确定的个人打算；比单纯将来式更强调意图。",
+    "tags": ["intention"],
+    "review": "verified"
+  },
+  {
+    "id": "pt-047",
+    "name": "〜でしょう / 〜だろう",
+    "level": 2,
+    "jlpt_ref": "N4",
+    "meaning_zh": "大概…吧（推测）。でしょう 礼貌，だろう 普通。",
+    "formation_zh": "名词/形容词/动词普通形 + でしょう／だろう。",
+    "examples": [
+      { "jp": "明日は晴れるでしょう。", "kana": "あしたははれるでしょう。", "zh": "明天大概会晴吧。" }
+    ],
+    "related_patterns": ["pt-048"],
+    "chinese_learner_note": "升调的でしょう？也可用于向对方确认；天气预报常用。",
+    "tags": ["probability"],
+    "review": "verified"
+  },
+  {
+    "id": "pt-048",
+    "name": "〜かもしれません",
+    "level": 3,
+    "jlpt_ref": "N4",
+    "meaning_zh": "也许…/可能…（不确定的推测，可能性低于 でしょう）。",
+    "formation_zh": "名词/形容词/动词普通形 + かもしれません。",
+    "examples": [
+      { "jp": "彼は来ないかもしれません。", "kana": "かれはこないかもしれません。", "zh": "他也许不来。" }
+    ],
+    "related_patterns": ["pt-047"],
+    "chinese_learner_note": null,
+    "tags": ["probability"],
+    "review": "verified"
+  },
+  {
+    "id": "pt-049",
+    "name": "〜すぎる",
+    "level": 3,
+    "jlpt_ref": "N4",
+    "meaning_zh": "太…/过于…（程度过头）。",
+    "formation_zh": "动词ます形去ます / 形容词去い・な + すぎる。",
+    "examples": [
+      { "jp": "食べすぎました。", "kana": "たべすぎました。", "zh": "吃太多了。" },
+      { "jp": "この問題は難しすぎます。", "kana": "このもんだいはむずかしすぎます。", "zh": "这个问题太难了。" }
+    ],
+    "related_patterns": [],
+    "chinese_learner_note": "含「过头、不好」的语气，不是单纯的「很」。",
+    "tags": ["degree"],
+    "review": "verified"
+  },
+  {
+    "id": "pt-050",
+    "name": "〜くなる / 〜になる（变化）",
+    "level": 2,
+    "jlpt_ref": "N5",
+    "meaning_zh": "变得…（状态变化）。",
+    "formation_zh": "い形容词 い→く + なる；な形容词/名词 + に + なる。",
+    "examples": [
+      { "jp": "寒くなりました。", "kana": "さむくなりました。", "zh": "变冷了。" },
+      { "jp": "日本語が上手になりました。", "kana": "にほんごがじょうずになりました。", "zh": "日语变好了。" }
+    ],
+    "related_patterns": [],
+    "chinese_learner_note": "い形容词用 く、な形容词和名词用 に，再接 なる；中文都说「变」。",
+    "tags": ["change"],
+    "review": "verified"
+  }
+]
