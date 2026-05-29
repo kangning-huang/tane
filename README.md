@@ -3,6 +3,8 @@
 面向**中文母语者**的最小日语学习系统，灵感来自 Ogden 的 Basic English。
 把一组**核心词、核心汉字、核心句型**当作种子——先掌握它们，再用它们去理解、组合、表达，并解释更复杂的词。
 
+🌐 **在线学习**：<https://kangning-huang.github.io/tane/>
+
 > 学完这套核心词、核心汉字与核心句型后，能理解和表达大部分日常意思，并能用简单日语解释更复杂的词。
 > 这不是"学完即可无障碍读新闻/小说/论文"——而是 Ogden 式的"用少量核心词进行解释、组合与表达"。
 
@@ -39,6 +41,7 @@ npm run dev      # 开发服务器 http://localhost:3000
   `GITHUB_PAGES=true`，并以仓库名作 `basePath`（项目站点在子路径下，否则 CSS/JS 会 404）。
 - 本地 `npm run dev` / `npm run build` 不设该变量，仍在根路径 `/`，互不影响。
 - TTS 用浏览器 Web Speech API，纯前端，静态托管完全支持。
+- **改名 / 迁移后若页面"无样式、扁平化"**：多半是旧构建的资源路径（旧仓库名）与新网址不符。到 **Actions → "Deploy to GitHub Pages" → Run workflow**（`basePath` 会按新仓库名重建为 `/<新名>`），跑完再**强制刷新**（Ctrl/Cmd+Shift+R）即可。
 
 ## 仓库结构
 
