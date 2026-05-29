@@ -6,11 +6,50 @@
 > 学完 **850 词条 + 300 核心汉字 + 80 句型**后，能理解和表达大部分日常意思，并能用简单日语解释更复杂的词。
 > 这不是"学完即可无障碍读新闻/小说/论文"——而是 Ogden 式的"用少量核心词进行解释、组合与表达"。
 
-本仓库当前阶段 = **v0.1 数据集**（结构化词表，尚无网站）。前端计划用 Next.js，数据驱动渲染。
+本仓库当前阶段 = **v0.1 数据集 + Next.js 卡片学习前端**（数据驱动渲染）。
+
+## 运行前端（Web）
+
+```bash
+npm install
+npm run dev      # 开发服务器 http://localhost:3000
+# 或：npm run build && npm run start   生产构建
+```
+
+前端是数据驱动的卡片学习应用，直接读取 `data/` 下的 JSON：
+
+- **分类标签**：全部 / 操作词 / 动词 / 抽象名词 / 实物名词 / 性质词 / 固定表达 / 汉字 / 易混淆 / 句型
+- **翻卡学习**：正面显示词形·假名·罗马音·发音；背面显示中文释义、基础日语解释、例句、句型、中文母语者陷阱注
+- **简 / 繁切换**、**随机顺序（洗牌）**、**键盘操作**（← → 切换、空格翻转、S 随机、T 简繁）
+- **自动发音**：浏览器 Web Speech API（`ja-JP`），无需音频文件
+- **「易混淆」视图**：自动汇集所有带中文母语者陷阱注 / false-friend 标签的词
+
+## 部署到 GitHub Pages
+
+本应用是纯静态站点，可直接托管在 GitHub Pages。仓库已含工作流
+`.github/workflows/deploy.yml`，**只需在仓库设置里启用一次 Pages**：
+
+1. **Settings → Pages → Build and deployment → Source** 选 **GitHub Actions**。
+2. 把分支合并到 `main`（或在 **Actions** 页手动运行 “Deploy to GitHub Pages” 并选择分支）。
+3. 部署完成后访问 `https://<用户名>.github.io/<仓库名>/`
+   （本仓库即 `https://kangning-huang.github.io/Ogden-850-Japanese/`）。
+
+要点：
+- `next.config.mjs` 用 `output: "export"` 生成静态 `out/`；工作流构建时设
+  `GITHUB_PAGES=true`，并以仓库名作 `basePath`（项目站点在子路径下，否则 CSS/JS 会 404）。
+- 本地 `npm run dev` / `npm run build` 不设该变量，仍在根路径 `/`，互不影响。
+- TTS 用浏览器 Web Speech API，纯前端，静态托管完全支持。
 
 ## 仓库结构
 
 ```
+.github/workflows/
+  deploy.yml        # GitHub Pages 自动部署（静态导出 → Pages）
+app/                # Next.js App Router（layout / page / globals.css）
+components/
+  StudyApp.tsx      # 卡片学习主组件（标签 / 翻卡 / 简繁 / 随机 / 键盘 / TTS）
+lib/
+  data.ts           # 读取并合并 data/ 下的 JSON，按 types.ts 定型
 data/
   types.ts          # schema 唯一真相来源（TypeScript 接口）
   categories.json   # 6 大分类 + 子类元数据
@@ -75,6 +114,7 @@ scripts/
 
 - **v0.1（当前）** 372 个 verified 词条 + 111 汉字 + 50 句型 + 完整 schema/校验/文档。
 - **v0.2** 补齐至 850 词条 / 300 汉字 / 80 句型；接入 BCCWJ 频率校准；生成 TTS 音频。
-- **v1.0** Next.js 数据驱动网站：卡片 / 句型 / 汉字 / 阅读四种模式，简繁切换、随机复习、进度记录。
+- **前端（已上线 MVP）** 卡片 / 汉字 / 句型 / 易混淆视图，简繁切换、随机复习、键盘操作、浏览器 TTS。
+- **前端（待办）** 阅读模式（只用已学词的短文）、学习进度持久化（localStorage）、搜索、ruby 注音、深色模式。
 
 数据来源与授权见 [`docs/methodology.md`](docs/methodology.md)。
