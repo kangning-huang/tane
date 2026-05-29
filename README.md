@@ -1,9 +1,9 @@
-# 日本語 Basic 850
+# 種 · 种子日语 (Tane)
 
-面向**中文母语者**的最小日语学习系统，灵感来自 Ogden 的 Basic English 850。
-目标：用最小词汇、最小汉字、最小句型，覆盖日常的**理解与表达**。
+面向**中文母语者**的最小日语学习系统，灵感来自 Ogden 的 Basic English。
+把一组**核心词、核心汉字、核心句型**当作种子——先掌握它们，再用它们去理解、组合、表达，并解释更复杂的词。
 
-> 学完 **850 词条 + 300 核心汉字 + 80 句型**后，能理解和表达大部分日常意思，并能用简单日语解释更复杂的词。
+> 学完这套核心词、核心汉字与核心句型后，能理解和表达大部分日常意思，并能用简单日语解释更复杂的词。
 > 这不是"学完即可无障碍读新闻/小说/论文"——而是 Ogden 式的"用少量核心词进行解释、组合与表达"。
 
 本仓库当前阶段 = **v0.1 数据集 + Next.js 卡片学习前端**（数据驱动渲染）。
@@ -32,7 +32,7 @@ npm run dev      # 开发服务器 http://localhost:3000
 1. **Settings → Pages → Build and deployment → Source** 选 **GitHub Actions**。
 2. 把分支合并到 `main`（或在 **Actions** 页手动运行 “Deploy to GitHub Pages” 并选择分支）。
 3. 部署完成后访问 `https://<用户名>.github.io/<仓库名>/`
-   （本仓库即 `https://kangning-huang.github.io/Ogden-850-Japanese/`）。
+   （本仓库重命名为 `tane` 后即 `https://kangning-huang.github.io/tane/`）。
 
 要点：
 - `next.config.mjs` 用 `output: "export"` 生成静态 `out/`；工作流构建时设
