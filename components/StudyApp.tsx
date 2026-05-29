@@ -274,7 +274,7 @@ export default function StudyApp({
       <header className="app-header">
         <div>
           <h1 className="app-title">
-            日本語 <span>Basic 850</span>
+            種 <span>种子日语</span>
           </h1>
           <p className="app-sub">
             面向中文母语者的最小日语学习系统 · v0.1（{words.length} 词 ·{" "}

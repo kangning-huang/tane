@@ -2,7 +2,7 @@
 // 因此构建到 Pages 时需要把 basePath 设为仓库名。本地 dev/build 不设，
 // 仍然在根路径 "/" 提供，互不影响（由 GITHUB_PAGES 环境变量切换，
 // 部署工作流会设置它）。
-const repo = process.env.PAGES_BASE_PATH ?? "Ogden-850-Japanese";
+const repo = process.env.PAGES_BASE_PATH ?? "tane";
 const isPages = process.env.GITHUB_PAGES === "true";
 
 /** @type {import('next').NextConfig} */
